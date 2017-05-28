@@ -64,3 +64,5 @@ Notes:
 2) Cross Origin Pushes are currently blocked by Chrome.
 
 3) This code is still very much 'research code' but should provide a good starting point for custom replaying of sites.
+
+4) You need to modify 'http2_replay_server.js' with paths to your SSL private key and certificate

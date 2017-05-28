@@ -12,6 +12,7 @@ It records all HTTP request/responses sent out by chrome in JSON format.
 It will inject and execute the 'determinstic.js' (as taken from Web Page Replay) script into the page during recording, so dynamic URLS determined by Math.random() and Date() will be deterministic. (It will also store this in the main HTML of the page so subsequent replays will follow the same Math.random() and Date() overloads).
 
 To record a site first open google chrome with the remote debug port open:
+
 '''
 google-chrome --remote-debugging-port=9222 --user-data-dir --incognito 
 '''

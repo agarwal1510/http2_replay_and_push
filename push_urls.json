@@ -1,0 +1,4 @@
+{
+"push_urls":["https://t24mobile.com/styles/style.css", "https://t24mobile.com/scripts/controllers/homeCtrl.js", "https://t24mobile.com/images/logo.png"],
+"link_headers":"<https://t24mobile.com/styles/style.css>;rel=preload;as=style,<https://t24mobile.com/scripts/controllers/homeCtrl.js>;rel=preload;as=script,<https://t24mobile.com/images/logo.png>;rel=preload;as=image"
+}

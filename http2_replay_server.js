@@ -6,6 +6,8 @@
 //If pushing is enabled, before intialzing the server, reads in a file of objects to push, and pushes them when the main HTML is requested.
 //For insecure requests (http://) sends the response headers (optional) and the response body for this request over the wire in http1.1
 
+//For the node-http2 public API see: https://github.com/molnarg/node-http2/wiki/Public-API
+
 //TODO: (in no particular order)
 //		Better error handling of promises
 //		Refactor globals for request/response matching
@@ -27,7 +29,7 @@ var fsm = require('fuzzy-string-matching');
 const proc = require('process');
 
 //Globals
-var ssl_options = {key: fs.readFileSync('/home/nodejs/certs/http2TestServer.key'), cert: fs.readFileSync('/home/nodejs/certs/http2TestServer.cert')}; //SSL information
+var ssl_options = {key: fs.readFileSync('/path/to/key.key'), cert: fs.readFileSync('/path/to/certificate.cert')}; //SSL information
 var push_urls_array = JSON.parse(fs.readFileSync("push_urls.json", 'utf-8')).push_urls; //Array of full URLS to push. node-http2 will parse off authority and path automatically
 var link_header = JSON.parse(fs.readFileSync("push_urls.json", 'utf-8')).link_headers; //Array of LRP headers. Used by chrome to make pushes (i.e. PUSH_PROMISE's) accepted before they are requested.
 var serverName = proc.argv[2];

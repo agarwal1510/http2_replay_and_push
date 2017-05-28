@@ -13,7 +13,7 @@ It will inject and execute the 'determinstic.js' (as taken from Web Page Replay)
 
 To record a site first open google chrome with the remote debug port open:
 
-'''
+'''javascript
 google-chrome --remote-debugging-port=9222 --user-data-dir --incognito 
 '''
 

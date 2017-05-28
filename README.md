@@ -25,7 +25,7 @@ To proceed to recording HTTP Traffic of multiple sites at once run 'chrome_recor
 
 Argument Explanation:
 1) './chrome_http_records/' : Directory of were to store each record session (under each name provided in the second argument file)
-2) './sites.txt' : "\n" delimited file of fully qualified domain names of sites to record. A new directory will be created in the argument 1 directory corresponding to each line in this file.
+2) './sites.txt' : "\n" delimited file of full URLs of sites to record. A new directory will be created in the argument 1 directory corresponding to each line in this file.
 3) '20000' : Time to wait for the site to load before committing HTTP requests to file, in milliseconds
 
 B) Replaying

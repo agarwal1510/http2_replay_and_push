@@ -19,9 +19,9 @@ To record a site first open google chrome with the remote debug port open:
 (9222 is the default TCP port for remote debug communications)
 
 To proceed to recording HTTP Traffic of multiple sites at once run 'chrome_record.js' as follows:
-'''
-node chrome_record.js ./chrome_http_records/ ./sites.txt 20000
-'''
+
+    node chrome_record.js ./chrome_http_records/ ./sites.txt 20000
+
 
 Argument Explanation:
 1) './chrome_http_records/' : Directory of were to store each record session (under each name provided in the second argument file)
@@ -42,9 +42,8 @@ google-chrome --user-data-dir --incognito --ignore-certificate-errors --disable-
 
 Then run the server:
 
-'''
-node http2_replay_server.js ebay.com ./chrome_http_records/ebay.com/ true false true
-'''
+
+    node http2_replay_server.js ebay.com ./chrome_http_records/ebay.com/ true false true   
 
 Argument Explanation:
 1) 'ebay.com' : The authority of the site to load.

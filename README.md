@@ -31,10 +31,9 @@ Argument Explanation:
 B) Replaying
 
 First open chrome with the following flags:
-'''
-google-chrome --user-data-dir --incognito --ignore-certificate-errors --disable-web-security --allow-running-insecure-content &
 
-'''
+    google-chrome --user-data-dir --incognito --ignore-certificate-errors --disable-web-security --allow-running-insecure-content &
+
 (--ignore-certificate-errors is so an SSL certificate can satisfy multiple domains without crashing chrome)
 (--disable-web=security is so Cross origin resources are loaded without the necessary HTTP headers)
 (--allow-running-insecure-content allows our replay server to be accessed by http:// and https:// requests, though HTTP/2 is only delivered under TLS)
